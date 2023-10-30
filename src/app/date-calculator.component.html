@@ -1,0 +1,14 @@
+<div>
+    <h2>Angular Date Calculator</h2>
+    <label for="datesInput">Select Dates (comma-separated):</label>
+    <input type="date" id="datesInput" [(ngModel)]="selectedDates" (input)="onDateInputChange()">
+  
+    <button (click)="calculateDaysInDates()">Calculate Days in Dates</button>
+    <button (click)="getDaysInMonth()">Get Total Days in Month</button>
+
+
+    <div id="consoleOutput">
+        <p>Output:</p>
+        <p>{{ consoleOutput }}</p>
+    </div>
+</div>
